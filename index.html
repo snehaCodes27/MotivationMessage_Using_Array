@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Motivational App By Sneha</title>
+		<style>
+			*{text-align:center; font-size:40px;font-family:;}
+			h2{font-family:Brush Script MT;}
+			body{background-color: #ff00003d;}
+			h1{background-color:  #ff0048a8; color:black; border-radius:30px;margin-top:20px; margin-left:20px;}
+			h2{border:solid;
+				border-radius:40px;
+				width:45%;
+				margin:auto;
+				border-color:white;}
+		</style>
+	</head>
+	<body>
+		<h1> Motivational Message App</h1>
+		<form onsubmit="show()">
+			<input type="submit" value="show Message" />
+		</form>
+		<h2 id="msg"/>
+	<script>
+		function show()
+		{
+			event.preventDefault();
+			let msg = document.getElementById("msg");
+			let data=[
+  "Believe in yourself and all that you are.",
+  "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+  "Don't watch the clock; do what it does. Keep going.",
+  "Dream big and dare to fail.",
+  "Your only limit is your mind.",
+  "Push yourself, because no one else is going to do it for you.",
+  "Great things never come from comfort zones.",
+  "Stay focused and never give up.",
+  "Hard work beats talent when talent doesn't work hard.",
+  "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
+  "Make each day your masterpiece.",
+  "Doubt kills more dreams than failure ever will.",
+  "Act as if what you do makes a difference. It does.",
+  "Keep going. Everything you need will come to you at the perfect time.",
+  "You don’t have to be great to start, but you have to start to be great.",
+  "It always seems impossible until it’s done.",
+  "Small progress is still progress.",
+  "If you're going through hell, keep going.",
+  "Don't stop until you're proud.",
+  "Be stronger than your excuses."
+];
+			
+			
+				let display = parseInt(Math.random() * data.length);
+				msg.innerHTML=data[display];
+			
+			
+		}
+	</script>
+	</body>
+
+
+</html>
